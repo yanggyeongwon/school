@@ -2,6 +2,7 @@
 public class Ex03 {
 
 	public static void main(String[] args) {
+//		-----------------------------------------------
 //		 int i = 1;
 //		 switch (i) {
 //		 	case 1:
@@ -16,7 +17,7 @@ public class Ex03 {
 //		int j = (i%2==0) ? 0 : 1;
 //		
 //		System.out.println("jÀÇ °ª : "+j);	
-//		
+//		-----------------------------------------------
 //		if(j != 0) {
 //			
 //			System.out.println("È¦");
@@ -25,7 +26,7 @@ public class Ex03 {
 //			System.out.println("Â¦");
 //			System.out.println("if°ªÀÌ falseÀÏ¶§ "+j);	
 //		}
-//		
+//		-----------------------------------------------
 //		switch (j) {
 //		case 1:
 //			System.out.println("È¦");	
@@ -36,7 +37,7 @@ public class Ex03 {
 //			System.out.println("Â¦");
 //			System.out.println("default :"+j);	
 //		}
-		
+//		-----------------------------------------------
 //		int Q = 50;
 //		int W = 40;
 //		int E = 30;
@@ -45,7 +46,7 @@ public class Ex03 {
 //		int sum = Q+W+E+R;
 //		
 //		System.out.println(sum);
-//		
+//		-----------------------------------------------
 //		switch (sum/4) {
 //		case 40:
 //			System.out.println("40Æò±ÕÀÌ»ó");
@@ -56,14 +57,30 @@ public class Ex03 {
 //		default: 
 //			System.out.println("40Æò±ÕÀÌÇÏ");
 //		}
-		
-		StringBuilder sc = new StringBuilder();
-		
-		sc.append("fruit");
-		System.out.println("fruit : "+sc.toString());
-		
-		
-		
+//		-----------------------------------------------
+//		StringBuilder sc = new StringBuilder();
+//		
+//		sc.append("fruit");
+//		System.out.println("fruit : "+sc.toString());
+//		------------------------------------------
+//		int sum=0;
+//		for(int i=1; i<=10 ; i++) {
+//			
+//			sum += i;
+//			
+//		}
+//		System.out.println(sum);
+//		-----------------------------------------------
+		int sum = 0,sum2 = 0;
+		for(int i=1; i<=10 ; i++) {
+			if(i%2==0) {
+				sum += i;
+			}else {
+				sum2 += i;
+			}
+		}
+		System.out.println(sum);
+		System.out.println(sum2);
 	}
 
 }
