@@ -64,6 +64,10 @@ public class Ex03 {
 		System.out.println("fruit : "+sc.toString());
 		System.out.println("fruit : "+sc.toString());
 		System.out.println("fruit : "+sc.toString());
+		System.out.println("fruit : "+sc.toString());
+		System.out.println("fruit : "+sc.toString());
+		System.out.println("fruit : "+sc.toString());
+		
 		
 	}
 
