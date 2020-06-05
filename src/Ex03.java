@@ -61,7 +61,9 @@ public class Ex03 {
 		
 		sc.append("fruit");
 		System.out.println("fruit : "+sc.toString());
-		
+		System.out.println("fruit : "+sc.toString());
+		System.out.println("fruit : "+sc.toString());
+		System.out.println("fruit : "+sc.toString());
 		
 	}
 
