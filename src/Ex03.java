@@ -37,25 +37,32 @@ public class Ex03 {
 //			System.out.println("default :"+j);	
 //		}
 		
-		int Q = 50;
-		int W = 40;
-		int E = 30;
-		int R = 50;
-		//int sum = ((Q+W+E+R)/4)>40 ? 1 : 2;
-		int sum = Q+W+E+R;
+//		int Q = 50;
+//		int W = 40;
+//		int E = 30;
+//		int R = 50;
+//		//int sum = ((Q+W+E+R)/4)>40 ? 1 : 2;
+//		int sum = Q+W+E+R;
+//		
+//		System.out.println(sum);
+//		
+//		switch (sum/4) {
+//		case 40:
+//			System.out.println("40∆Ú±’¿ÃªÛ");
+//			break;
+//		case 42:
+//			System.out.println("42¿ÃªÛ");
+//			break;
+//		default: 
+//			System.out.println("40∆Ú±’¿Ã«œ");
+//		}
 		
-		System.out.println(sum);
+		StringBuilder sc = new StringBuilder();
 		
-		switch (sum/4) {
-		case 40:
-			System.out.println("40∆Ú±’¿ÃªÛ");
-			break;
-		case 42:
-			System.out.println("42¿ÃªÛ");
-			break;
-		default: 
-			System.out.println("40∆Ú±’¿Ã«œ");
-		}
+		sc.append("fruit");
+		System.out.println("fruit : "+sc.toString());
+		
+		
 	}
 
 }
