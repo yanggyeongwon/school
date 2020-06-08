@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Ex03 {
 
@@ -115,14 +116,62 @@ public class Ex03 {
 		//int a [] = {1,2,3};
 		//int score [][] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
 //		int score [][] = new int[4][3];
-		int score [][] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
-		int i,j;
-		for(i=0; i<4;i++) {
-			for(j=0; j<=2; j++) {
-				System.out.print(score[i][j]);
-			}
-			System.out.println();
-		}
-
+//		int score [][] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
+//		int i,j;
+//		for(i=0; i<score.length;i++) {
+//			for(j=0; j<score[i].length; j++) {
+//				System.out.print(score[i][j]);
+//			}
+//			System.out.println();
+//		}
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int N = sc.nextInt();
+//		int T = sc.nextInt();
+//		
+//		int arr[][]  = new int [N][T];
+//		int i,j = 0;
+//		
+//		for(i=0; i <N;i++) {
+//			for(j=0; j <T;j++) {
+//				arr[i][j] = sc.nextInt();
+//			}
+//		}
+//		int a[] = {1,2,3};
+//		
+//		for(int temp: a) {
+//			System.out.println(temp);
+//		}
+		
+//		int i,j;
+//		int score[][] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
+//		
+//		for(int temp []: score) {
+//			for(int temp2 : temp) {
+//				System.out.print(temp2);
+//			}
+//			System.out.println();
+//		}
+		
+//		int arr []= {8,3,5,2,9};
+//		
+//		int temp,min;
+//		for(int i=0; i<arr.length-1; i++) {
+//			for(int j=i+1; j<arr.length; j++) {
+//				if(arr[i] > arr[j]) {
+//					temp = arr[j];
+//					System.out.println("temp = " + temp);
+//					arr[j] = arr[i];
+//					System.out.println("arr[j] = " + arr[j]);
+//					arr[i] = temp;
+//					System.out.println("arr[i] = " + arr[i]);
+//				}
+//			}
+//		}
+//		for(int i = 0; i<arr.length;i++) {
+//			System.out.println(arr[i]);
+//		}
+		
+		
 	}
 }
