@@ -10,11 +10,11 @@ public class CodingTest19 {
  
 		for(int i = 1; i <= 2*N; i++){//N이 2일때 1<=4
 			if(i%2 == 1){//2배수 1로 떨어지는애들
-				for(int j = 1; j <= N; j++){
-					if(j%2 == 1){
+				for(int j = 1; j <= N; j++){//N은 3일때
+					if(j%2 == 1){//처음은 1 true, 마지막 3이니까 true
 						System.out.print("*1");
 					}
-					else{
+					else{//2번째는 false N이 3이니까 3번 돌고 
 						System.out.print(" 1");
 					}
 				}
