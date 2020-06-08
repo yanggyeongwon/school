@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.Collections;
 
 public class Ex03 {
 
@@ -13,12 +11,12 @@ public class Ex03 {
 //			System.out.print("\n");
 //		}
 //		-----------------------------과제
-//		for(int i=5; i>0; i--) {
-//			for(int j=0; j<i; j++) {
-//				System.out.print("*");
-//			}
-//			System.out.print("\n");
-//		}
+		for(int i=5; i>0; i--) {
+			for(int j=0; j<i; j++) {
+				System.out.print("*");
+			}
+			System.out.print("\n");
+		}
 //		----------------------------과제
 		
 //		for(int i=2; i<10; i++) {
@@ -171,7 +169,6 @@ public class Ex03 {
 //		for(int i = 0; i<arr.length;i++) {
 //			System.out.println(arr[i]);
 //		}
-		
 		
 	}
 }
