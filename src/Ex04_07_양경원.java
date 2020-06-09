@@ -13,10 +13,9 @@ public class Ex04_07_¾ç°æ¿ø {
 		int max=0;
 		int min=0;
 
-		
+
 		while(true) {
 			num = sc.nextInt();
-			
 			
 			
 			if(num == 1) {
