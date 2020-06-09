@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Ex04_07_양경원 {
 
 	public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);
+		
+		Scanner sc = new Scanner(System.in);
 		
 		int score[] = null;
 		int N,stu,num,tmp;
@@ -15,6 +16,9 @@ Scanner sc = new Scanner(System.in);
 		
 		while(true) {
 			num = sc.nextInt();
+			
+			
+			
 			if(num == 1) {
 				System.out.println("학생수입력 : ");
 				
@@ -33,10 +37,6 @@ Scanner sc = new Scanner(System.in);
 				}
 			}else if(num == 3) {
 				System.out.println("점수목록");
-				if(score == null) {
-					System.out.println("1번 학생수 부터 입력하시오");
-					continue;
-				}
 				for(i=0; i<score.length;i++) {
 					System.out.println(i+1+"번 학생 점수 : "+score[i]);
 				}
