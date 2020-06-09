@@ -12,9 +12,31 @@
 //			String color,color2,power,power2;
 //			int channel,channel2;
 //	}
+	class Company{
+		static String Lg,color;
+		static int ch;
+		boolean power;
+		void chup(){
+			ch++;
+		}
+		void power() {
+			power = true ? true : false;
+			//power = !power;
+		}
+	}
 public class ex1 {
 	
 	public static void main(String[] args) {
+		
+		Company co = new Company();
+		co.ch= 12;
+		co.chup();
+		co.power();
+		System.out.println(co.power);
+		Company.Lg = "LG";
+		System.out.println(co.Lg);
+		System.out.println(Company.Lg);
+		System.out.println(co.ch);
 
 //		Person man = new Person();
 //		Person woman = new Person();
@@ -25,7 +47,7 @@ public class ex1 {
 //		woman.name = "¿µÈñ";
 //		woman.height = 154.3;
 //		Product pro =  new Product();
-//
+//		Person.nation;
 //		pro.color = "red";
 //		pro.color2 = "yellow";
 //		pro.channel = 11;
@@ -54,7 +76,8 @@ public class ex1 {
 		
 		
 		
-	}	
+	}
+
 }
 
 
