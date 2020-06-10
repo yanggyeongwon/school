@@ -13,7 +13,7 @@ public class Ex05_11_¾ç°æ¿ø {
 			if(b == 0) {//3
 				return 1;	
 			}else {
-				return a * set(a ,b-1);//2*set(2,2) 4, 2*set(2,1)  2, 2*set(2,0) 1 //2*4 = 8
+				return a * set(a ,--b);//2*set(2,2) 4, 2*set(2,1)  2, 2*set(2,0) 1 //2*4 = 8
 			}
 			
 	}

@@ -44,9 +44,10 @@
 		public static void main(String[] args) {
 			
 			
-			int a = 30, b = 40, c;
-			Math.max(a, b);
-			
+//			int a = 30, b = 40, c = 0;
+//			Math.max(a, b);
+//			System.out.println("c:"+ c );
+//			System.out.println(Math.max(a, b));
 			
 //			Ex05_08_변수 sc = new Ex05_08_변수();
 //			sc.plus(1, 2, 3);

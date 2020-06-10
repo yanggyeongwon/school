@@ -46,7 +46,19 @@ import java.util.Scanner;
 //			return b;
 //		}
 //	}
-
+class Tv{
+	String color;
+	int channel;
+	boolean power;
+	static String company;
+	
+	void channelUp() {
+		channel++;
+	}
+	void powerUp() {
+		power = !power;
+	}
+}
 
 	
 public class Ex05_04_¾ç°æ¿ø {
