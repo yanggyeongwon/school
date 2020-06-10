@@ -12,31 +12,51 @@
 //			String color,color2,power,power2;
 //			int channel,channel2;
 //	}
-	class Company{
-		static String Lg,color;
-		static int ch;
-		boolean power;
-		void chup(){
-			ch++;
-		}
-		void power() {
-			power = true ? true : false;
-			//power = !power;
-		}
-	}
+//	class Company{
+//		static String Lg,color;
+//		static int ch;
+//		boolean power;
+//		void chup(){
+//			ch++;
+//		}
+//		void power() {
+//			power = true ? true : false;
+//			//power = !power;
+//		}
+//	}
 public class ex1 {
-	
+	static void set(int a, double b) {
+		System.out.println(a+b);
+	}
+	static void arry(int[] des) {
+		for(int i=0; i<des.length;i++) {
+			System.out.println(des[i]);
+		}
+		des[1]=10;
+		System.out.println("-------");
+	}
 	public static void main(String[] args) {
 		
-		Company co = new Company();
-		co.ch= 12;
-		co.chup();
-		co.power();
-		System.out.println(co.power);
-		Company.Lg = "LG";
-		System.out.println(co.Lg);
-		System.out.println(Company.Lg);
-		System.out.println(co.ch);
+		int a = 1;
+		double b = 2.3;
+		
+		set(a,b);
+		int arr[] = {3,4,5};
+		arry(arr);
+		for(int i=0; i<arr.length;i++) {
+			System.out.println(arr[i]);
+			
+		}
+		System.out.println("++++++++");
+//		Company co = new Company();
+//		co.ch= 12;
+//		co.chup();
+//		co.power();
+//		System.out.println(co.power);
+//		Company.Lg = "LG";
+//		System.out.println(co.Lg);
+//		System.out.println(Company.Lg);
+//		System.out.println(co.ch);
 
 //		Person man = new Person();
 //		Person woman = new Person();
