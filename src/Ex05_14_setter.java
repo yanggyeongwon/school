@@ -10,18 +10,21 @@
 		String getColor() {
 			return color;
 		}
+		
 		void setchannel(int b){
 			channel = b;
 		}
 		int getchannel() {
 			return channel;
 		}
+		
 		void setbool(boolean c){
 			power = c;
 		}
 		boolean getbool() {
 			return power;
 		}
+		
 		
 		
 		void channelUp() {
