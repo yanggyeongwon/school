@@ -10,34 +10,31 @@ class Music{
 	Music(String title,String singer,String genre,int price){
 		this.title = title; this.singer = singer; this.genre = genre; this.price = price;
 	}
-	
-	void setTitle(String a) {
-		title = a;
-	}
-	void setSinger(String a) {
-		singer = a;
-	}
-	void setGenre(String a) {
-		genre = a;
-	}
-	void setPrice(int a) {
-		price = a;
-	}
-	
-	
-	String getTitle() {
+
+	public String getTitle() {
 		return title;
 	}
-	String getSinger() {
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getSinger() {
 		return singer;
 	}
-	String getGenre() {
+	public void setSinger(String singer) {
+		this.singer = singer;
+	}
+	public String getGenre() {
 		return genre;
 	}
-	int getPrice() {
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+	public int getPrice() {
 		return price;
 	}
-	
+	public void setPrice(int price) {
+		this.price = price;
+	}
 	void display() {
 		System.out.println("--------------------");
 		System.out.println("ㅣ       title : " + title+"      ㅣ");
@@ -70,6 +67,24 @@ public class Ex05_17_양경원 {
 		Music mu1 = new Music();//생성자 통한 초기화
 		Music mu2 = new Music("찐","영탁","트로트",3000);
 		Music mu3 = new Music();//setter 통한 초기화
+		
+		
+		Music bk[] = new Music[3];
+		
+		bk[0] = new Music();
+		bk[1] = new Music("찐1","영탁1","트로트1",4000);
+		bk[2] = new Music();
+		bk[2].setTitle("asd");
+		bk[2].setSinger("dfg");
+		bk[2].setGenre("asd");
+		bk[2].setPrice(50000);
+		
+		int i;
+		for(i=0;i<bk.length;i++) {
+			System.out.println(bk[i].show());
+		}
+		
+		
 		Music mu4 = new Music();//setter 통한 초기화
 		mu4.display(1);
 		
