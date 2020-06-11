@@ -36,7 +36,6 @@ public class Ex05_19_객체배열입력 {
 		}
 		
 		for(int i=0;i<m.length;i++) {
-			
 			System.out.println(m[i].show());
 		}
 	}
