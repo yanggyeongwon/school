@@ -46,7 +46,7 @@
 
 		
 	}
-public class E06_12_양경원 {
+public class Ex06_12_양경원 {
 
 	public static void main(String[] args) {
 		Phone_a ph = new Phone_a(7,"blue");

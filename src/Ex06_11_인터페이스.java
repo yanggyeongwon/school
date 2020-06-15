@@ -21,7 +21,7 @@
 		}
 
 		@Override
-		public void fax() {
+		public void fax() {  
 			System.out.println("팩스");
 			
 		}
@@ -41,6 +41,7 @@ public class Ex06_11_인터페이스 {
 		//a =3;변경 안됨
 		Compound c = new Compound();
 		c.copy();
+		
 		Printmachine p = new Compound();
 		p.print();
 		

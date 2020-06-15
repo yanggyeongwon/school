@@ -5,6 +5,7 @@ class Car_c{
 	class CarInfo{
 		String model;
 		int year;
+		
 		CarInfo(String model,int year){
 			this.model = model;
 			this.year = year;
@@ -20,6 +21,7 @@ class Car_c{
 		
 	}
 	public void CarPrint() {
+		info.CarInfoPrint();
 		System.out.println(info.model+","+info.year+","+color);
 	}
 }
@@ -27,6 +29,9 @@ class Car_c{
 public class Ex07_01_inner {
 
 	public static void main(String[] args) {
+		Car_c pride = new Car_c("pride",2020,"ÆÄ¶û");
+		pride.CarPrint();
+		pride.info.CarInfoPrint();
 		
 
 	}
