@@ -1,14 +1,14 @@
 
 
 abstract class Employee2{
-		String empno,name;
-		int pay,bonus;
+		private String empno,name;
+		protected int pay;
 		
-		public Employee2(String empno, String name, int pay, int bonus) {
+		public Employee2(String empno, String name, int pay) {
 			this.empno = empno;
 			this.name = name;
 			this.pay = pay;
-			this.bonus = bonus;
+			
 		}
 		abstract double getMonthPay();
 		
@@ -23,7 +23,7 @@ abstract class Employee2{
 		double bonus;
 		
 		public FullTime(String empno,String name,int pay,int bonus) {
-			super(empno,name,pay,bonus);
+			super(empno,name,pay);
 			this.bonus = bonus;
 		}
 		@Override
@@ -41,7 +41,7 @@ abstract class Employee2{
 		int hireYear;
 		
 		public Contract(String empno, String name, int pay,int hireYear) {
-			super(empno, name, pay, hireYear);
+			super(empno, name, pay);
 			this.hireYear = hireYear;
 		}
 		
@@ -60,7 +60,7 @@ abstract class Employee2{
 		int workDay;
 		
 		public PartTime(String empno, String name, int pay, int workDay) {
-			super(empno, name, pay, workDay);
+			super(empno, name, pay);
 			this.workDay = workDay;
 		}
 		
