@@ -32,7 +32,7 @@ public class Ex08_02_String {
 		System.out.println(str1.charAt(3));//문자열에 위치한 글자 반환
 		char c = str1.charAt(3);
 		System.out.println(c);
-		System.out.println(str1.substring(7,11));//7번째~11번째 까지 11포함 안함
+		System.out.println("섭스트링"+str1.substring(7,11));//7번째~11번째 까지 11포함 안함
 		System.out.println(str1.substring(7));
 		
 		System.out.println(str1.replace("a", "x"));// a를 x로 변경

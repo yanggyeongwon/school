@@ -54,6 +54,17 @@ public class Ex08_04_Wrapper {
 			System.out.println(sum);
 		}
 		System.out.println("sum :" + sum);
+		
+		String str [] = {"웬디:90","크리스탈:70","아이유:80"};
+		for(int q=0; q<str.length;q++){
+			int pos = str[q].indexOf(":");
+			String sum1 = str[q].substring(pos+1);
+			
+			int jumsu = Integer.parseInt(sum1);
+			
+			sum += Integer.parseInt(str[q].substring(str[q].indexOf(":")+1));			
+		}
+		System.out.println(sum);
 	}
 
 }
