@@ -24,12 +24,13 @@ class Person_pa extends Object{
 public class Ex08_01_toString {
 
 	public static void main(String[] args) {
-		Person_pa man = new Person_pa("보검", 30);
+		Person_pa man = new Person_pa("보검", 20);
 		Person_pa woman = new Person_pa("윤아", 20);
 		System.out.println(man.toString());
 		System.out.println(woman);//참조변수 == 참조변수.toString();
 		
 		System.out.println(man.equals(woman));//woman ->obj
+		System.out.println(man==woman);
 	}
 
 }
