@@ -1,4 +1,4 @@
-class Person_pa extends Object{
+class Person_pa extends Object{//to.string 기능 주소를 리턴한다.
 	private String name;
 	private int age;
 	
