@@ -19,7 +19,7 @@ public class Ex08_08_Date {
 		System.out.println(sdf1.format(a));
 		sdf2 = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss a");
 		System.out.println(sdf2.format(a));
-		sdf3 = new SimpleDateFormat("yyyy년 MM월 dd일 h:m:s a");
+		sdf3 = new SimpleDateFormat("yyyy년 MM월 dd일 h:m: s a");
 		System.out.println(sdf3.format(a));
 		
 	}
