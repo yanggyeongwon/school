@@ -11,7 +11,7 @@ public class Ex08_06_양경원 {
 		
 		int i = 0;
 		int j = 0;
-		
+		int sum = 0;
 		for(i=0; i<lotto.length;i++) {
 			lotto [i] = (int)(Math.random()*45)+1;
 			System.out.print("숫자 "+ (i+1) +": ");
@@ -27,12 +27,11 @@ public class Ex08_06_양경원 {
 		for(i=0; i<lotto.length;i++) {
 			System.out.print("내 숫자"+(i+1)+" : ");
 			my [i] = sc.nextInt();
-			
 		}
 		for(i=0; i<lotto.length;i++) {
-			System.out.print(my[i]+ " ");
+			sum = my[i];
+			System.out.print(sum+" ");
 		}
-		System.out.print(lotto[i]+ " ");
 		
 	}
 

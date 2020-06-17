@@ -1,31 +1,53 @@
 package CodingTest;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
-public class reTest{
-	public static void onAction() throws Exception{
-		Scanner sc = new Scanner(System.in);
-		int input = sc.nextInt();
-		for(int i=0; i<10 ; i++) {
-			try {
-				if(i!=6) {
-					System.out.println(i+"는 6이 아닙니다");
-				}else {
-					throw new Exception();
-				}
-			} catch (Exception e) {
-				System.out.println(i + "는 6이 맞네여");
-				throw e;
+public class reTest {
+	static int[] temp;
+	static int[] arr;
+	static int TESTCASE; 
+	static int N;
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st ;	
+		
+		while(true) {
+			st = new StringTokenizer(br.readLine(), " ");
+			N = Integer.parseInt( st.nextToken());
+			temp = new int[N+1];
+			arr = new int[N+1];
+			if(N == 0) {
+				break;
 			}
+			for(int i = 0; i < N; i++) {
+				arr[i] = Integer.parseInt( st.nextToken());
+			}
+			dfs(0, 0);	
+			System.out.println();
 		}
+		
 	}
-	public static void main(String [] args) {
-		try {
-			onAction();
-		} catch (Exception e) {
-			System.out.println("onAction에서 6을 발견");
-		}finally {
-			System.out.println("try-catch문 종료 finally");
+	
+	public static void dfs(int start, int depth) {
+		if( depth == 6 ) {
+			for(int i = 0 ; i < N; i++) {
+				if(temp[i] == 1) {
+					System.out.print( arr[i] + " ");
+				}
+			}
+			System.out.println();
 		}
+		
+		for(int i = start; i < N; i++) {
+			temp[i] = 1;
+			dfs( i + 1, depth+1);
+			temp[i] = 0;
+		}
+
+		
 	}
 }
