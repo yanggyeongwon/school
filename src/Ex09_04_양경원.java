@@ -56,6 +56,8 @@ public class Ex09_04_¾ç°æ¿ø {
 			}
 			
 		}while(true);
+		
+		
 
 		//		list.add(p1);// -> true
 		//		list.add(p2);

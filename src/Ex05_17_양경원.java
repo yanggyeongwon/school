@@ -5,10 +5,10 @@ class Music{
 	private int price;
 	
 	Music(){
-		title = "鎘"; singer = "艙饕"; genre = "お煎お"; price = 3000;
+		setTitle("鎘"); setSinger("艙饕"); genre = "お煎お"; setPrice(3000);
 	}
 	Music(String title,String singer,String genre,int price){
-		this.title = title; this.singer = singer; this.genre = genre; this.price = price;
+		this.setTitle(title); this.setSinger(singer); this.genre = genre; this.setPrice(price);
 	}
 
 	public String getTitle() {
@@ -37,10 +37,10 @@ class Music{
 	}
 	void display() {
 		System.out.println("--------------------");
-		System.out.println("太       title : " + title+"      太");
-		System.out.println("太     singer : " + singer+"    太");
+		System.out.println("太       title : " + getTitle()+"      太");
+		System.out.println("太     singer : " + getSinger()+"    太");
 		System.out.println("太     genre : " + genre+"   太");
-		System.out.println("太     price : " + price+"  太");
+		System.out.println("太     price : " + getPrice()+"  太");
 		System.out.println("--------------------");
 	}
 	void display(int a) {
@@ -55,7 +55,7 @@ class Music{
 	}
 	
 	String show(){
-		return "太  " +title +" "+ singer +" "+ genre + " "+ price +"  太";
+		return "太  " +getTitle() +" "+ getSinger() +" "+ genre + " "+ getPrice() +"  太";
 	}
 	
 }
