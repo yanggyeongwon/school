@@ -74,7 +74,7 @@ public class TestCase2{
 			String Id_ = sc.next();
 			
 			
-			for(int i = 0; i<list.size();i++) {
+			for(int i = 0; i<list.size(); i++) {
 				if(list.get(i).getTitle().equals(Id_)) {
 					System.out.println(list.get(i).getTitle()+"의 가수명은"+list.get(i).getSinger());
 					
