@@ -50,11 +50,11 @@ public class Ex09_04_양경원 {
 			
 			yn = sc.next();
 			if(yn.equalsIgnoreCase("n")) {
-				System.out.println(list.toString());
+				
 				System.out.println("프로그램 종료");
 				break;
 			}
-			
+			System.out.println(list.toString());
 		}while(true);
 		
 		
