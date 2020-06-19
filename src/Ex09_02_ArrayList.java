@@ -5,10 +5,10 @@ public class Ex09_02_ArrayList {
 	public static void main(String[] args) {
 		
 		String s = "Hello";
-		System.out.println("s :"+s.toString());
+		System.out.println("s :"+s.toString());//hello
 		
 		ArrayList<String> arr = new ArrayList<String>();
-		System.out.println("arr size: " + arr.size());
+		System.out.println("arr size: " + arr.size());//0
 		
 		arr.add("윤아");
 		arr.add("태연");
@@ -16,13 +16,13 @@ public class Ex09_02_ArrayList {
 		arr.add("효연");
 		arr.add("수영");
 
-		System.out.println("arr: " + arr);
-		System.out.println("arr size: " + arr.size());
-		System.out.println("arr: "+ arr.get(0));
+		System.out.println("arr: " + arr);//윤아 태연 수영 효연 수영
+		System.out.println("arr size: " + arr.size());//5
+		System.out.println("arr: "+ arr.get(0));//윤아
 		
 		arr.add(1,"서현");
 		
-		System.out.println("arr: " + arr);
+		System.out.println("arr: " + arr);//서현 태연 수영 효연 수영
 		System.out.println("--------------------------------");
 		
 		ArrayList<String> add = new ArrayList<String>();
@@ -37,7 +37,7 @@ public class Ex09_02_ArrayList {
 		
 		System.out.println("arr: "+arr);
 		System.out.println("add size: "+ add.size());
-		System.out.println("add size: "+ arr.size());
+		System.out.println("arr size: "+ arr.size());
 		
 		String str = arr.remove(1);
 		boolean b = arr.remove("수영");

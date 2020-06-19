@@ -21,22 +21,19 @@ class Card{
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
-	public String toString() {
-		return name+"\t"+ tel;
-	}
+
 }
 
 public class Ex09_06_양경원 {
 
 	public static void main(String[] args) {
 		ArrayList<Card> arr = new ArrayList<Card>();
-
-		String name;
+		Scanner sc = new Scanner(System.in);
+		
+		String name,num;
 		do {
-
-			System.out.println("1.명함추가  2.명함삭제  3.명함수정  4.명함보기  5.종료");
-
-			Scanner sc = new Scanner(System.in);
+			boolean flag = false;
+			System.out.println("1.명함추가  2.명함삭제  3.명함수정  4.명함보기  5.종료");	
 
 			int select = sc.nextInt();
 			if(select == 5) {
@@ -49,7 +46,7 @@ public class Ex09_06_양경원 {
 				System.out.print("이름을 입력하세요");
 				name = sc.next();
 				System.out.print("전화번호를 입력하세요");
-				String num = sc.next();
+				num = sc.next();
 
 				arr.add(new Card(name,num));
 
@@ -62,21 +59,26 @@ public class Ex09_06_양경원 {
 				for(int i=0; i<arr.size();i++) {
 					if(name.equals(arr.get(i).getName())) {
 						arr.remove(arr.get(i));
+						flag=true;
+						System.out.println("삭제되었습니다.");
+						break;
 					}
 				}
-
-				System.out.println("삭제되었습니다.");
+				if(flag == false) {
+					System.out.println("이름을 잘못 입력하였습니다.");
+				}
 				break;
+
 			case 3:
 
-				boolean flag = false;
+				
 				System.out.print("이름을 입력하세요");
 				name = sc.next();
 				for(int i=0; i<arr.size();i++) {
 					if(arr.get(i).getName().equals(name)) {
 						System.out.print("바꾸실 전화번호를 입력하세요. :");
-						String tel = sc.next();
-						arr.get(i).setTel(tel);
+						num = sc.next();
+						arr.get(i).setTel(num);
 						System.out.println("변경되었습니다.");
 						flag=true;
 						break;
@@ -88,10 +90,13 @@ public class Ex09_06_양경원 {
 				}
 				break;
 			case 4:
-				//				System.out.println("이름\t전화번호");
-				System.out.println(arr);
+				System.out.println("이름\t전화번호");
+				for(int i=0;i<arr.size();i++) {
+					System.out.println(arr.get(i).getName()+"\t"+arr.get(i).getTel());
+				}
 				break;
 			default:
+				System.out.println("1~5사이 번호만 입력");
 				break;
 			}
 		}while(true);

@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Ex09_10_HashMap {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {//key 중복 ㄴㄴ, value 중복 가능
 		HashMap<String, Integer> hm = new HashMap<String, Integer>();
 		
 		hm.put("아이린", new Integer(23));

@@ -25,12 +25,10 @@ public class Ex08_06_양경원 {
 		}
 
 		for(i=0; i<lotto.length;i++) {
-
 			System.out.print("내 숫자"+(i+1)+" : ");
 			my [i] = sc.nextInt();
 
 			for(j=0; j<i; j++) {
-				
 				if(my[i] == my[j]) {
 					System.out.print("중복됨 다시 입력 숫자 "+(i+1)+":");
 					my [i] = sc.nextInt();
@@ -49,9 +47,6 @@ public class Ex08_06_양경원 {
 		for(i=0; i<lotto.length; i++) {
 			System.out.print(lotto[i]+" ");
 		}
-		
-		System.out.println();
-
 		System.out.println("----내가 발생시킨 번호----");
 		for(i=0; i<lotto.length; i++) {
 			System.out.print(my[i]+" ");
