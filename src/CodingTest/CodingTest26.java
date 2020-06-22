@@ -5,28 +5,27 @@ import java.util.Scanner;
 public class CodingTest26 {
 
 	public static void main(String[] args) {
-		
-		 Scanner sc = new Scanner(System.in);
-	        int N = sc.nextInt();
-	        String[] cases = new String[N];
-	        for (int i = 0; i < N; i++) {
-	            cases[i] = sc.next();
-	        }
-	        sc.close();
-	         
-	        int count, total;
-	        for (String OXresult : cases) {
-	            count = 0;
-	            total = 0;
-	            for (int i = 0; i < OXresult.length(); ++i) {
-	                if (OXresult.charAt(i) == 'O') {
-	                    total += ++count;
-	                } else {
-	                    count = 0;
-	                }
-	            }
-	            System.out.println(total);
-	        }
+
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		String[] str = new String[num+1];
+
+		for (int i = 0; i < num; i++) {
+			int count = 0, sum = 0;
+			str[i] = sc.next();
+			for (int j =0; j < str[i].length(); j++) {
+
+				if (str[i].charAt(j) == 'O') {
+					sum += ++count;
+				}
+				else count = 0;
+
+			}
+			 System.out.println(sum);
+
+		}
+
+		sc.close();
 	}
 
 }
