@@ -15,17 +15,17 @@ public class Ex11_03_BufferedStream {
 			
 			for(int i = 1; i<9; i++) {
 				System.out.print(i);
-				fos.write(i+48);
+				bos.write(i+48);
 			}
 			
 			System.out.println();
-			
-			while((num = fis.read()) != -1) {
+			bos.flush();
+			while((num = bis.read()) != -1) {
 				System.out.print((char)num+" ");
 			}
-
-			fos.close();
-			fis.close();
+			
+			bos.close();
+			bis.close();
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

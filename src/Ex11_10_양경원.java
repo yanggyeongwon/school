@@ -1,51 +1,134 @@
-import java.util.*;
-import java.io.*;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
 public class Ex11_10_양경원 {
 
 	public static void main(String[] args) throws IOException {
-
-		
-		
-		System.out.println("단어장이름을 입력하세요 ");
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-		try {
-			
-			String file_Name = br.readLine();
-			BufferedWriter bw = new BufferedWriter(new FileWriter(file_Name));//C:\sun\voca.txt
-			while(true) {
-				
-				System.out.println("1.단어입력 2.단어검색 3.종료");
-				
-				String num = br.readLine();
-
-//				if (num = 1) {
-//					System.out.print("단어 / 뜻 입력>>");
+//		BufferedReader br = null;
+//		BufferedWriter bw = null;
+//		String str,line;
+//		int count = 0;
+//		boolean flag=false;
 //
-//					String str;
-//					while((str = br.readLine()) != null) {
-//						bw.write(str);
-//						bw.newLine();
+//		Scanner sc =new Scanner(System.in);
+//		String input;
+//
+//		
+//		while(true){
+//			System.out.println("1. 단어입력  2. 단어검색  3. 종료  :");
+//			input = sc.next(); 
+//
+//			switch(input.charAt(0)){
+//			case '1':
+//				System.out.print("단어 / 뜻 입력");
+//				br = new BufferedReader(new InputStreamReader(System.in));
+//				str = br.readLine(); 
+//				bw = new BufferedWriter(new FileWriter("voka.txt",true));
+//
+//				bw.write(str);
+//				bw.newLine(); 
+//				
+//				bw.close(); 
+//				break;
+//
+//			case '2':
+//				System.out.println("검색 단어 입력");
+//
+//				br = new BufferedReader( new InputStreamReader(System.in));
+//				str = br.readLine();
+//				br = new BufferedReader( new FileReader("voka.txt"));
+//				
+//				while((line = br.readLine()) != null){
+//					flag= false;
+//					String[] tokens = line.split("/");
+//					if(tokens[0].trim().compareTo(str.trim()) == 0){ 
+//						System.out.println("단어 : " + tokens[0].trim());
+//						System.out.println("단어의 뜻 : " + tokens[1]);
+//						flag= true;
+//						break;
 //					}
 //				}
-//				else if(num == 2) {
-//					
+//				if(!flag){
+//					System.out.println("찾는 단어 없음");
 //				}
-//				else if( num == 3) {
-//					
-//				}
-
-			}
+//
+//				break;
+//			case '3':
+//				System.out.println("프로그램 종료합니다.");
+//				br.close();
+//				System.exit(0);
+//			}
+//			
+//		}
+		Scanner sc = new Scanner(System.in);
+		String str;
+		BufferedReader br = null;
+		BufferedWriter bw = null;
+		BufferedReader br2 = null;
+		boolean flag = false;
+		while(true) {
+			System.out.println("1.단어입력 2.단어검색 3.종료");
+			int input = sc.nextInt();
+			switch(input) {
 			
-		} catch (NumberFormatException e) {
-			e.printStackTrace();
-		}
-		catch (Exception e) {
-			e.printStackTrace();
+			case 1:
+				System.out.print("단어 / 뜻 입력");
+				
+				br = new BufferedReader(new InputStreamReader(System.in));
+				str = br.readLine();
+				bw = new BufferedWriter(new FileWriter("c:\\sun\\voka.txt",true));
+				
+				bw.write(str);
+				bw.newLine();
+				bw.flush();
+				break;
+			case 2:
+				System.out.print("검색 단어 입력");
+				br = new BufferedReader(new InputStreamReader(System.in));
+				str = br.readLine();
+				br2 = new BufferedReader( new FileReader("c:\\sun\\voka.txt"));
+				String line;
+				while((line = br2.readLine()) != null) {
+					flag = false;
+					String[] token = line.split("/");
+					if(token[0].equals(str)) {
+						
+						System.out.println("단어 :"+token[0]);
+						System.out.println("뜻 :"+token[1]);
+						
+						flag = true;
+						
+						break;
+					}
+					
+				}
+				if(flag == false) {
+					System.out.println("찾는단어 없음");					
+				}
+				break;
+			case 3:
+				System.out.println("프로그램 종료");
+				if(bw != null) {
+					br.close();
+				}
+				
+				if(bw != null) {
+					bw.close();
+				}
+				
+				System.exit(0);
+				break;
+			}
 		}
 	}
-}
 
+}
 //입력한 단어/뜻은 voca.txt에 쓰기
 //1.단어입력 2.단어검색 3.종료 >> 1
 //단어/뜻 입력>>apple/사과
